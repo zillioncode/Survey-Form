@@ -1,0 +1,222 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #3494E6;
+    background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);
+    background: linear-gradient(to left, #EC6EAD, #3494E6);
+    color: white;
+    font-family: 'Alegreya', serif;
+    min-width: 30%;
+}
+
+.container {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    border: 10px solid #0f0c29;
+    box-shadow: 0px 0px 10px grey;
+    width: 51%;
+    height: auto;
+    margin: 20px auto 20px auto;
+    padding-bottom: 30px;
+}
+
+.formHead {
+    background: #0f0c29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.formHead h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.formHead p {
+    font-size: 20px;
+    color: white;
+    margin-top: -10px;
+}
+
+.dummyImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.dummyImage .dummy {
+    height: 200px;
+    width: 200px;
+}
+
+.brief {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.nail, .agc, .work,
+.salary, .btn, .feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nail>div, .work>div,
+.feedback, .btn>div {
+    padding: 20px;
+}
+
+.agc>div {
+    padding: 8px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    height: 20px;
+    border: 10px solid white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 2px;
+}
+
+.agc .agearea #number,
+.agc .genderarea #ga,
+.agc .countryarea #ca {
+  width: 160px;
+}
+
+.work .empst #dropdown,
+.work .edu #dropdown {
+    width: 258px
+}
+
+.nail .namearea #name,
+.nail .emailarea #email {
+  width: 235px
+}
+
+.salary .earn,
+.salary .worky {
+    width: 238px;
+    margin: 18px;
+    padding: 8px;
+    background: white;
+    border: solid white;
+    border-radius: 3px;
+    color: grey;
+    font-size: 20px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    border: 10px solid white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+textarea {
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 150px;
+    width: 556px;
+    padding: 10px;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    resize: none;
+}
+
+.btn #reset,
+.btn #submit {
+    width: 258px;
+    height: 50px;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #D1913C;
+    background: -webkit-linear-gradient(to right, #FFD194, #D1913C);
+    background: linear-gradient(to right, #FFD194, #D1913C);
+    border-radius: 3px;
+    color: white;
+    border: transparent;
+    box-shadow: grey 0px 0px 1px;
+}
+
+.btn #reset:hover,
+.btn #submit:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width : 300px) and (max-width : 480px) {
+
+    .btn #reset,
+    .btn #submit {
+        width: 120px;
+    }
+
+.agc .agearea #number,
+.agc .countryarea #ca {
+  width: 100px;
+}
+
+.agc .genderarea #ga {
+    width: 120px;
+}
+
+.work .empst #dropdown,
+.work .edu #dropdown {
+    width: 120px
+}
+
+.nail .namearea #name,
+.nail .emailarea #email {
+  width: 100px
+}
+
+    textarea {
+        width: 120px;
+    }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 1162px) {
+    .container {
+        width: 58%;
+    }
+
+    .agc>div {
+        padding: 20px;
+    }
+
+    .agc .agearea #number {
+        width: 238px;
+    }
+
+    .agc .genderarea #ga {
+        width: 258px;
+    }
+
+    .agc .countryarea #ca {
+  width: 230px;
+}
+
+    textarea {
+        width: 258px;
+    }
+}
