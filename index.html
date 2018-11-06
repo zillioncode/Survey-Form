@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Survey Form - Build Career
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya|Chicle|Caveat|Bree+Serif">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/web-place/rishigiri.in/gh-pages/rishi.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formHead">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know how you want to craft your future.</p>
+        </div>
+        <div class="dummyImage">
+            <img class="dummy" src="https://raw.githubusercontent.com/rishigiridotcom/rishigiri.com/fcbe73e8fc46e789d64bbedaf0a6998c86ec2e47/fccimages/dummy.png" alt="dummy image">
+        </div>
+            <div class="brief">
+                <p>Please fill out all the sections!</p>
+            </div>
+            <form action="" id="survey-form">
+                <div class="nail common">
+                    <div class="namearea">
+                        <label id="name-label">Full Name</label><br>
+                        <input id="name" type="text" name="fullname" placeholder="Full Name" autofocus autocomplete required>
+                    </div>
+                    <div class="emailarea">
+                        <label id="email-label">Email Address</label><br>
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="agc common">
+                    <div class="agearea">
+                        <label id="number-label">Age</label><br>
+                        <input id="number" type="number" name="age" min="10" max="70" placeholder="Age" required>
+                    </div>
+                    <div class="genderarea">
+                        <label>Gender</label><br>
+                        <select name="gender" id="ga">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="countryarea">
+                        <label>Country</label><br>
+                        <input type="text" name="country" placeholder="Country" id="ca" required>
+                    </div>
+                </div>
+                <div class="work common">
+                    <div class="empst">
+                        <label>Employment Status</label><br>
+                        <select name="status" id="dropdown">
+                            <option value="student">Student</option>
+                            <option value="wages">Employed For Wages</option>
+                            <option value="employed">Self-Employed</option>
+                            <option value="military">Military</option>
+                            <option value="work">Looking For Work</option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="edu">
+                        <label>Education</label><br>
+                        <select name="education" id="dropdown">
+                            <option value="undergrad">Some High School</option>
+                            <option value="highschool">High School Graduate</option>
+                            <option value="bachelor">Bachelor’s Degree</option>
+                            <option value="master">Master’s Degree</option>
+                            <option value="doctorate">Doctorate Degree</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="salary common">
+                    <div class="earn">
+                        Salary Expectations<br>
+                        <label><input type="radio" name="salary" value="3050">30k-50k</label><br>
+                        <label><input type="radio" name="salary" value="5080">50k-80k</label><br>
+                        <label><input type="radio" name="salary" value="80110">80k-110k</label><br>
+                    </div>
+                    <div class="worky">
+                        Working Remotely<br>
+                        <label><input type="checkbox" value="comfortable">Comfortable</label><br>
+                        <label><input type="checkbox" value="preferable">Preferable</label><br>
+                        <label><input type="checkbox" value="unsure">Not sure</label><br>
+                    </div>
+                </div>
+                <div class="feedback common">
+                    <textarea name="fdb" placeholder="Tell us more about yourself!"></textarea>
+                </div>
+                <div class="btn common">
+                    <div>
+                        <input id="reset" type="button" onclick='document.getElementById("survey-form").reset()' value="RESET">
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" value="SUBMIT">
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
